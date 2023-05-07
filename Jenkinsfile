@@ -17,7 +17,7 @@ pipeline {
             steps {
                 sshagent(['webapp']) {
                     // copying build artifact to tomcat server
-                    sh 'scp StrictHostKeyChecking=no webapp/target/webapp.war ubuntu@ec2-44-206-250-102.compute-1.amazonaws.com:/var/lib/tomcat9/webapps'
+                    sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ubuntu@ec2-44-206-250-102.compute-1.amazonaws.com:/var/lib/tomcat9/webapps'
                 }
             }
         }
