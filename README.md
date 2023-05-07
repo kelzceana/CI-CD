@@ -12,3 +12,5 @@ Jenkins is installed as a Docker container on the AWS server
 Tomcart server is installed on ubuntu OS
 <br>
 The build artifcat from the build stage in the pipeline is copied to the tomcat server using the ssh agent plugin on jenkins
+<br>
+Configured security group on EC2 Instance to allow access to web application
