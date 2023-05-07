@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     echo 'Build stage'
-                    echo 'Building jJava application'
+                    echo 'Building Java application'
                     sh 'mvn clean install package'
                 }
             }
@@ -17,7 +17,6 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying application'
-                    echo 'Deploy stage'
                 }
             }
         }
